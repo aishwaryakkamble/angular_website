@@ -12,4 +12,7 @@ export class HeaderComponent {
   ngOnInit():void{
     
   }
+  check(){
+    alert("done");
+  }
 }
