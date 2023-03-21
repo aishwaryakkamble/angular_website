@@ -1,0 +1,32 @@
+.form-control{
+    border-radius: 5px;
+    margin-left: 25px;
+    width: 600px;
+}
+.search-icon{
+    z-index: 25;
+    position: absolute;
+    /* right:40%; */
+    left: 38%;
+    color: blue;
+    top: 33%;
+}
+.cart-top{
+    display:flex;
+    min-width: 12;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    position: relative;
+    flex-direction: column;
+    border: 1px solid rgb(62, 21, 212);
+    border-radius: .35rem;
+}
+
+.item{
+    margin: 0px 25px;
+    text-align: center;
+}
+.item a:hover{
+    color:green;
+}

@@ -1,0 +1,127 @@
+
+<!-- <div class="product" *ngFor="let product of products">
+    <div class="product-image">
+        <img [src]="product.image" alt="{{ product.name }}">
+    </div>
+    <div class="product-info">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <h4>{{ product.price | currency }}</h4>
+        <button (click)="addToCart(product)">Add to Cart</button>
+    </div>
+</div> -->
+
+
+<!-- <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;" *ngFor="let product of products">
+    <div class="row row-cols-3 row-cols-xs-2 row-cols-sm-4 row-cols-lg-4 g-3">
+        <div class="col-4">
+            <div class="card h-100 shadow-sm"> <img
+                    src="{{product.image}}"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{product.price
+                            | currency :'INR'}}
+                        </span><span class="float-end"><a href="#" class="small text-muted">Reviews</a></span>
+                    </div>
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <div class="text-center my-4"> <a
+                            href=""
+                            class="btn btn-warning"  >Check offer</a> </div>
+                            <div class="text-center my-4">
+                                <a class="btn btn-warning" (click)="addToCart(product)">Add To cart</a>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+<app-header></app-header>
+
+
+
+    <!-- <div class="container">
+  
+            <table class="table table-responsive">
+                <thead>
+                    <tr style="color:black">
+                      <th>Id</th>
+                        
+                        <th>Name</th>
+                        <th>Price</th>
+                        
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+            <tbody >
+                <tr *ngFor="let item of cartItems; let i = index" style="color:black">
+                  <td>1</td>
+                    <td >1000</td>
+                    <td  >jsdhbsncilawufcmniwehfc kuejfmdnc </td>
+                    <td >109</td>
+                    <td><button (click)="removeItem(i)" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
+                </tr>
+            </tbody>
+        </div> -->
+
+    <div class="container text-center container-fluid bg-trasparent">
+        <div class="row">
+          <div class="col-2 mb-3" style="margin-left: 10%; margin-top: 5%;" *ngFor="let product of products">        
+            <div class="card h-100 shadow-sm" style="width: 18rem;">
+              <img   src={{product.image}}  class="card-img-top" alt="..."  >
+              <div class="card-body" style="height:auto">
+                <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{product.price
+                    | currency :'INR'}}
+                </span>&nbsp;&nbsp;
+                <span class="float-start badge rounded-pill bg-warning">ID:{{product.id}}</span><span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+                 </div>
+                 <h5 class="card-title">{{product.name}}</h5>
+              </div>
+              
+                <div class="text-center my-4">
+                    <a class="btn btn-info" (click)="addToCart(product)">Add To cart</a>
+                </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+
+
+
+      <h1 style="text-align: center; color:green">Your  added cart is here</h1>
+<div class="container" *ngFor="let item of cartItems; let i = index"  style="text-align: center; margin-top: 3%; ">
+    <h5 style="margin: 2%; background-color: rgb(118, 118, 234)">    Id: {{item.id}}&nbsp; &nbsp; Price of Your selected product :{{item.price |currency :'INR'}} &nbsp; &nbsp;
+
+    <button (click)="removeItem(i)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+</h5>
+
+</div>
+   
+
+
+ 
+
+<br><br>
+
+   <app-footer></app-footer>
+
+
+
+
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of cartItems; let i = index">
+                <!-- <td>{{item.image}}</td> 
+                <td>{{ item.name }}</td>
+                <td>{{ item.price | currency }}</td>
+                <td><button (click)="removeItem(i)">Remove</button></td>
+            </tr>
+        </tbody>
+    </table> -->

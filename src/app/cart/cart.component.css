@@ -1,0 +1,44 @@
+.card{
+   
+    margin:0px;
+}
+.card img{
+    width:130px;
+    height:130px;
+    margin-bottom: 15px;
+    transition: 0.15s ease-in-out;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.shadowcard{
+    
+    margin:0px 35px;
+}
+/* .card-table{
+    display:flex;
+    /* min-width:none; 
+    position:relative;
+    word-wrap: break-word;
+    background-color:black;
+    
+    border: 1px solid black;
+    border-radius: .25rem;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.center .btn{
+    margin-bottom: 25px !important;
+    font-size: 15px !important;
+    font-weight: 400;
+    padding: 10px 70px;
+}
+table td{
+    word-wrap: break-all;
+}
+        */

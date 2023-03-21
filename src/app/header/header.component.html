@@ -1,0 +1,89 @@
+
+
+<header>
+    <nav class="navbar navbar-dark bg-dark  mb5">
+        <div class="navbar-brand align-item-center d-flex">
+
+
+
+
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search Product">
+
+                <span class="fas fa-search search-icon"></span>
+            </div>
+            <div class="container ">
+                <ul class="nav nav-pills">
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink="/electronics">Electronics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink="/furniture">Furniture</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink="/cloths">Cloths</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink="/Product">Product</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link " routerLinkActive="active" routerLink="/login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button routerLink="cart" class="btn btn-primary">
+            <i style="font-size:30px;" class="fas fa-cart-plus" routerLink="/cart"></i>
+            <div class="badge bg-danger">{{totalItemNumber}}</div>
+
+        </button>
+    </nav>
+</header>
+
+
+<div class="cart-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" routerLink="/electronics">
+                <h6>Elctronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" routerLink="/furniture">
+                <h6>Furniture</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100" routerLink="/cloths">
+                <h6>Cloths</h6>
+            </a>
+        </div>
+          <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" routerLink="/product">
+                <h6>Grocery</h6>
+            </a>
+        </div>
+          <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" routerLink="/electronics">
+                <h6>Appliances</h6>
+            </a>
+        </div>
+        <div class="item">
+            
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" routerLink="/Product">
+                <h6>Top offers</h6>
+            </a>
+        </div>
+    </div>
+</div>

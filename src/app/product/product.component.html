@@ -1,0 +1,301 @@
+<!-- <p>product works!</p> -->
+<!-- <main> 
+    <ng-container *ngFor="let item of productList">
+        <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
+             <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"> 
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm"> 
+               
+                         <img src="{{item.imgUrl}}"   class="card-img-top" alt="...">
+                         <div class="card-body"> 
+                           
+              
+                                <span  class="float-start badge rounded-pill bg-success clearfix mb-3  card-body" 
+                                style="font-weight:bold">{{item.price | currency : 'INR'}}</span>
+                          
+                                <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
+                         
+                                <h5 class="card-title  card-body">{{item.name}} </h5>
+                                 <p>{{item.description}}</p>
+                                <div class="text-center my-4"> 
+                                          <a href="#" style="border-radius: 30%;" class="btn btn-success">Buy</a><br><br>
+                                    <a href="#" class="btn btn-warning" (click)="addtoCart(item)">Add to cart</a> 
+                        </div> 
+                     </div> 
+                </div> 
+             </div> 
+
+            </div>
+        </div> 
+    </ng-container>
+    </main> -->
+
+
+
+
+<!-- <div class="col"> 
+            <div class="card h-100 shadow-sm"> 
+                <img src="https://www.ulcdn.net/images/products/696715/slide/666x363/Ava_Dining_set_4_seater_2.jpg?1666378325" class="card-img-top" alt="..."> 
+                <div class="card-body">
+                     <div class="clearfix mb-3"> 
+                        <span class="float-start badge rounded-pill bg-success">
+                        <span style="font-weight:bold">{{price | currency:'INR'}}</span></span>
+                        <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
+                    </div> 
+                    <h5 class="card-title">Royal chair
+                    </h5> 
+                    
+                    <div class="d-grid gap-2 my-4"> 
+                        <a href="#" class="btn btn-warning">Check offer</a>
+                    </div>
+                 </div>
+             </div> 
+        </div>
+         <div class="col">
+             <div class="card h-100 shadow-sm"> 
+             <img src="https://cdn.shopify.com/s/files/1/1306/4195/products/doe-buck-lounge-chair-shell-motif-luxury-green-velvet-lounge-chair-33469897900198_800x.jpg?v=1652342158" class="card-img-top" alt="...">
+            <div class="label-top shadow-sm">High Rated</div>
+             <div class="card-body"> 
+                 <div class="clearfix mb-3"> 
+                    <span class="float-start badge rounded-pill bg-success">
+                        <span style="font-weight:bold">{{price | currency:'INR'}}</span>
+                    </span> 
+                    <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
+                 </div> 
+                                
+            <h5 class="card-title"> Veniam quidem eaque optio laudantium sed aliquam sequi.</h5>
+             <div class="text-center my-4"> 
+                <a href="#" class="btn btn-warning">Check offer</a>
+             </div> 
+             <div class="clearfix mb-1"> 
+                <span class="float-start">
+                <i class="far fa-question-circle">
+                </i>
+            </span> 
+            <span class="float-end">
+                <i class="fas fa-plus"></i>
+            </span>
+             </div> 
+            </div> 
+        </div> 
+    </div>
+     <div class="col"> 
+        <div class="card h-100 shadow-sm"> 
+            <img src="https://cdn.shopify.com/s/files/1/0308/5641/3319/products/19077316-ch215ig-furniture-sofa-recliner-armchair-01_800x800.webp?v=1678087243" class="card-img-top" alt="..."> 
+                <div class="label-top shadow-sm">High Rated</div>
+                     <div class="card-body">
+                         <div class="clearfix mb-3"> 
+                        <span class="float-start badge rounded-pill bg-success">
+                            <span style="font-weight:bold">{{price | currency:'INR'}}</span>
+                        </span> 
+                        <span class="float-end">
+                            <a class="text-muted small" href="#">Reviews</a>
+                        </span>
+                     </div>
+                      <h5 class="card-title"> Veniam quidem eaque ut eveniet aut quis  Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                        <div class="text-center my-4">
+                             <a href="#" class="btn btn-warning">Check offer</a>
+                         </div> 
+                         <div class="clearfix mb-1"> 
+                            <span class="float-start">
+                            <i class="far fa-question-circle"></i>
+                        </span> 
+                        <span class="float-end">
+                                <i class="fas fa-plus">
+
+                                </i>
+                            </span> 
+                        </div> 
+                    </div>
+                 </div>
+          </div>  
+    
+  -->
+
+
+
+
+
+
+
+<app-header></app-header>
+
+
+
+<main>
+    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/612FFlb7f6L._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 182
+                                | currency :'INR'}}
+                            </span><span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">Vanish All in One Powder Detergent Booster - 400 g | Stain Remover for
+                            Clothes | Whitens Whites Brightens Colours</h5>
+                        <div class="text-center my-4"> <a
+                                href="https://www.amazon.in/Vanish-Action-Remover-Washing-Powder/dp/B01MSWRC2C/ref=sr_1_8?crid=1CTXRDCS472TL&keywords=top+offers&qid=1679281085&sprefix=top+offers%2Caps%2C334&sr=8-8"
+                                class="btn btn-warning">Check offer</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81vMec1lk+L._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 285
+                                | currency :'INR'}}
+                            </span> <span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">WildHorn Brown RFID Blocking Leather Wallet for Men I Ultra Strong
+                            Stitching I 6 Credit Card Slots I 2 Currency Compartments I 1 Coin Pocket</h5>
+                        <div class="d-grid gap-2 my-4"> <a
+                                href="https://www.amazon.in/WildHorn-Brown-Wallet-WH2052-Crackle/dp/B07C3VH84K/ref=sr_1_26?crid=1CTXRDCS472TL&keywords=top+offers&qid=1679281085&sprefix=top+offers%2Caps%2C334&sr=8-26"
+                                class="btn btn-warning">Check offer</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91FJgVJoqIL._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 519
+                                | currency :'INR'}}
+                            </span> <span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">OM SAI LATEST CREATION Women Printed Slub Rayon Tops with Half Sleeves
+                            for Office Wear, Casual Wear, Top for Women/Girls Tops Pack of 2 Combo</h5>
+                        <div class="text-center my-4"> <a
+                                href="https://www.amazon.in/OM-SAI-LATEST-CREATION-Printed/dp/B09GM9QJ7W/ref=sr_1_27?crid=1CTXRDCS472TL&keywords=top+offers&qid=1679281085&sprefix=top+offers%2Caps%2C334&sr=8-27"
+                                class="btn btn-warning">Check offer</a> </div>
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71Kx6rgmlRS._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 849
+                                | currency :'INR'}}
+                            </span>
+                            <span class="float-end"><a class="text-muted small" href="#" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">TIMEX Analog Men's Watch</h5>
+                        <div class="text-center my-4"> <a
+                                href="https://www.amazon.in/Timex-Analog-Blue-Dial-Watch-TW00ZR262E/dp/B07H3K85H5/ref=sr_1_34?crid=1CTXRDCS472TL&keywords=top+offers&qid=1679281085&sprefix=top+offers%2Caps%2C334&sr=8-34"
+                                class="btn btn-warning">Check offer</a> </div>
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>
+<main>
+    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71gM9rupYXL._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 669
+                                | currency :'INR'}}
+                            </span> <span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">MEENAZ Traditional Temple 1 One Gram Gold 18k Copper Brass Ruby Bridal
+                            South Indian Screw Back Studs Earrings Combo Set Pack Tops Stud For Women girls</h5>
+                        <div class="text-center my-4"> <a
+                                href="https://www.amazon.in/SIRIL-Womens-Stretchable-Bodycon-294TKA156-S/dp/B09QCRD4G9/ref=sr_1_33?crid=38ERKZZ81WCC&keywords=short+dress+for+women&qid=1679280514&sprefix=short+dress+for+women%2Caps%2C304&sr=8-33"
+                                class="btn btn-warning">Check offer</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61AOay4rIgL._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="..."><div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 1299
+                                | currency :'INR'}}
+                            </span> <span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">Festive Fashion™ Premium Women Top Handle Handbag | Crossbody | Stylish |
+                            Trendy | Shoulder | Sling | Satchel | Hand bag | Side </h5>
+                        <div class="d-grid gap-2 my-4"> <a
+                                href="https://www.amazon.in/FESTIVE-Festive-Fashion-Crossbody-Shoulder/dp/B09JN1NWMB/ref=sr_1_46?crid=1CTXRDCS472TL&keywords=top+offers&qid=1679281085&sprefix=top+offers%2Caps%2C334&sr=8-46"
+                                class="btn btn-warning">Check offer</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61Tu7AD5tDL._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 799
+                                | currency :'INR'}}
+                            </span> <span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">JBN Creation Boys' Black Cotton Blend Sherwani Style Kurta Set(VASBSW120)
+                        </h5>
+                        <div class="text-center my-4"> <a
+                                href="https://www.amazon.in/jbn-creation-Cotton-Sherwani-Black_2/dp/B071KPK9GF/ref=sr_1_57_sspa?crid=1CTXRDCS472TL&keywords=top+offers&qid=1679281085&sprefix=top+offers%2Caps%2C334&sr=8-57-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&psc=1"
+                                class="btn btn-warning">Check offer</a> </div>
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71lqfmYUT7L._AC_UL480_FMwebp_QL65_.jpg"
+                        class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Offer</div>
+                    <div class="card-body">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{ 2199
+                                | currency :'INR'}}
+                            </span> <span class="float-end"><a class="text-muted small" href="#" routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">Maxima Max Pro X5 Smartwatch-Premium Ultra Slim 1.7” HD Display with 15
+                            Days Battery Life,IP68 Resistance,60+ Watch Faces,Sleep&SpO2 Monitoring,Social Media alerts
+                        </h5>
+                        <div class="text-center my-4"> <a
+                                href="https://www.amazon.in/Maxima-Smartwatch-Premium-Resistance-Monitoring-Multiple/dp/B09H3364QV/ref=sr_1_49?crid=1CTXRDCS472TL&keywords=top+offers&qid=1679281085&sprefix=top+offers%2Caps%2C334&sr=8-49"
+                                class="btn btn-warning">Check offer</a> </div>
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>
+<app-footer></app-footer>
