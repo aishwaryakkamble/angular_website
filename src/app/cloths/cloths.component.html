@@ -1,4 +1,4 @@
-
+<!-- 
 <app-header></app-header>
 
 <main>
@@ -150,4 +150,33 @@
 
 
 </main>
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+
+
+
+
+<app-header></app-header>
+
+<div class="container text-center container-fluid bg-trasparent">
+    <div class="row">
+      <div class="col-2 mb-3" style="margin-left: 10%; margin-top: 5%;" *ngFor="let product of products">        
+        <div class="card h-100 shadow-sm" style="width: 18rem;">
+          <img   src={{product.image}}  class="card-img-top" alt="..."  >
+          <div class="card-body" style="height:auto">
+            <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{product.price
+                | currency :'INR'}}
+            </span>&nbsp;&nbsp;
+            <span class="float-start badge rounded-pill bg-warning">ID:{{product.id}}</span><span class="float-end"><a href="#" class="small text-muted" routerLink="/review">Reviews</a></span>
+             </div>
+             <h5 class="card-title">{{product.name}}</h5>
+          </div>
+          
+            <div class="text-center my-4">
+                <a class="btn btn-info" (click)="addToCart(product)">Add To cart</a>
+            </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+
+  <app-footer></app-footer>

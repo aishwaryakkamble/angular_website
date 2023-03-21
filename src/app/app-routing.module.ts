@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
 import { ReviewComponent } from './review/review.component';
+import { SampleComponent } from './sample/sample.component';
 
 const routes: Routes = [
   // {path:'',redirectTo:'Product',pathMatch:'full'},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'cart',component:CartComponent},
   {path:'review',component:ReviewComponent},
-  {path:'footer',component:FooterComponent}
+  {path:'footer',component:FooterComponent},
+  {path:'sample',component:SampleComponent}
 ];
 
 @NgModule({

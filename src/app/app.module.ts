@@ -18,6 +18,7 @@ import { CartComponent } from './cart/cart.component';
 import { ReviewComponent } from './review/review.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { SampleComponent } from './sample/sample.component';
 
 
 const routes:Routes=[
@@ -41,7 +42,8 @@ const routes:Routes=[
     RegisterComponent,
     CartComponent,
     ReviewComponent,
-    FooterComponent
+    FooterComponent,
+    SampleComponent
   
   
   ],

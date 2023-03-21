@@ -62,10 +62,14 @@
                 </tr>
             </tbody>
         </div> -->
+        
+
+        <button class="btn btn-warning" style="text-align: center; margin-top: 5%; margin-left: 50%; width: 150px;" (click)="buyAll()">Buy All</button>
+
 
     <div class="container text-center container-fluid bg-trasparent">
         <div class="row">
-          <div class="col-2 mb-3" style="margin-left: 10%; margin-top: 5%;" *ngFor="let product of products">        
+          <div class="col-2 mb-3" style="margin-left: 10%; margin-top: 5%;" *ngFor="let product of product.cart let i=index">        
             <div class="card h-100 shadow-sm" style="width: 18rem;">
               <img   src={{product.image}}  class="card-img-top" alt="..."  >
               <div class="card-body" style="height:auto">
@@ -78,7 +82,7 @@
               </div>
               
                 <div class="text-center my-4">
-                    <a class="btn btn-info" (click)="addToCart(product)">Add To cart</a>
+                    <a class="btn btn-info" (click)="removeItem(i)">Remove</a>
                 </div>
             </div>
           </div>
@@ -87,14 +91,14 @@
 
 
 
-      <h1 style="text-align: center; color:green">Your  added cart is here</h1>
+      <!-- <h1 style="text-align: center; color:green">Your  added cart is here</h1>
 <div class="container" *ngFor="let item of cartItems; let i = index"  style="text-align: center; margin-top: 3%; ">
     <h5 style="margin: 2%; background-color: rgb(118, 118, 234)">    Id: {{item.id}}&nbsp; &nbsp; Price of Your selected product :{{item.price |currency :'INR'}} &nbsp; &nbsp;
 
     <button (click)="removeItem(i)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
 </h5>
 
-</div>
+</div> -->
    
 
 
@@ -102,8 +106,7 @@
 
 <br><br>
 
-   <app-footer></app-footer>
-
+  
 
 
 

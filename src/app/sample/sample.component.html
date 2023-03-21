@@ -1,0 +1,31 @@
+
+<app-header></app-header>
+
+<div class="container" *ngFor="let item of  products">
+   <div *ngIf="item.id == OpenId">
+
+
+
+    <div class="row" style="background-color: antiquewhite; margin-top: 5%;">
+        <div class="col-2 mb-3" style="margin-left: 10%; margin-top: 5%; border-radius: 10%; margin-bottom: 10%;">
+          
+            <img style="width:150% " src="{{item.image}}" alt="">
+        </div>
+        
+        
+        <div class="col-3 mb-3" style="margin-left: 30%; margin-top: 5%; color: #A95700;">
+            <p > {{item.name}}</p>
+            <div class="text-center my-4">
+            <h2 style="color: #A95700;">{{item.price | currency: 'INR'}}</h2>
+          
+                <a class="btn btn-info" (click)="addToCart(item)">Add To cart</a>
+            </div> 
+            <div class="text-center my-4">
+                <a class="button button1" routerLink="/product">Back</a>
+            </div> 
+        </div>
+    </div>
+</div>
+</div>
+
+<app-footer></app-footer>
